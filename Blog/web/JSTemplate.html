@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/template.js"></script>
+</head>
+<body>
+
+<div id="content">
+
+</div>
+
+
+<script id="mytpl" type="text/html">
+    <h1>{{title}}</h1>
+    {{if isAdmin}}
+    <p>显示p</p>
+    {{/if}}
+
+    {{each list as value}}
+        <li>{{value}}</li>
+    {{/each}}
+
+</script>
+
+<script>
+
+    var data = {
+        title: '射手',
+        isAdmin: true,
+        score:61,
+        list: ['鲁班', '孙尚香', '黄忠', '马可波罗', '公孙离', '后裔', '咖罗']
+    };
+
+    var html = template('mytpl',data);
+    document.getElementById("content").innerHTML = html;
+
+</script>
+
+
+
+
+</body>
+</html>
