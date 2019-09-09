@@ -1,0 +1,268 @@
+.title-top-10{
+    margin-top: 10px;
+}
+
+.title-top-30{
+    /*margin-top: 30px;*/
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/***************第一部分***************/
+#top_bar {
+    height: 32px;
+    color: #7c7c7c;
+}
+
+.top-bar-left {
+    padding-left: 0;
+    float: left;
+    font-size: 13px;
+    line-height: 32px;
+}
+
+.top-bar-left li {
+    float: left;
+    padding-right: 15px;
+}
+
+.top-bar-left li a {
+    color: #7c7c7c;
+}
+
+.top-bar-right {
+    font-size: 13px;
+    line-height: 32px;
+}
+
+.icon-tel, .icon-email {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icon-tel {
+    width: 15px;
+    height: 16px;
+    background: url('../img/tel.png') no-repeat center 0;
+}
+
+.icon-email {
+    width: 18px;
+    height: 16px;
+    background: url('../img/email.png') no-repeat center 0;
+}
+
+/***************第一部分***************/
+
+/***************第二部分***************/
+
+.navbar-lk {
+    background-color: #fff;
+    margin-bottom: 0;
+    border: none;
+}
+
+.navbar-lk .navbar-brand {
+    height: 96px;
+    padding-left: 100px;
+    padding-right: 250px;
+}
+
+@media screen  and (max-width: 1140px) {
+    .navbar-lk .navbar-brand {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.navbar-lk .navbar-nav > li > a {
+    height: 96px;
+    line-height: 66px;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+@media screen  and (max-width: 840px) {
+    .navbar-lk .navbar-nav > li > a {
+        margin-right: 0;
+    }
+}
+
+@media screen  and (max-width: 1160px) {
+    .navbar-lk .navbar-nav > li > a {
+        margin-right: 5px;
+    }
+}
+
+.navbar-default .navbar-nav > .active > a {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #a496f5;
+    background-color: #fff;
+    border-bottom: 1px solid #ae98f6;
+}
+
+.dropdown-menu li a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #fff;
+    color: #ae98f6;
+}
+
+.navbar-lk .navbar-nav > .open > a,
+.navbar-lk .navbar-nav > .open > a:hover,
+.navbar-lk .navbar-nav > .open > a:focus {
+    background-color: #fff;
+    color: #ae98f6;
+    border-bottom: none;
+}
+
+.navbar-lk .navbar-toggle {
+    margin-top: 31px;
+    margin-bottom: 31px;
+}
+
+/**************第二部分**************/
+
+/**************尾部区域*****************/
+#lk_footer {
+    width: 100%;
+    color: #000;
+    font-size: 15px;
+    padding: 20px 0 20px;
+}
+
+#lk_footer .footer-top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+#lk_footer .content-us {
+    color: #705bf8;
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+}
+
+#lk_footer .footer-email {
+    margin: 5px 0;
+}
+
+#lk_footer .lk-ewm > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #666;
+}
+
+#lk_footer .lk-ewm > div img {
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+}
+
+#lk_footer .lk-ewm > div img:hover{
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.12);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,.12);
+    box-shadow: 0 5px 10px rgba(0,0,0,.12);
+}
+
+#lk_footer .content-us span {
+    margin-left: 10px;
+}
+
+#lk_footer .lk-ewm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lk_footer .lk-ewm > div + div {
+    margin-left: 20px;
+}
+
+#lk_footer .footer-bottom {
+    margin-top: 15px;
+    color: #a6a6a6;
+    font-size: 14px;
+}
+
+#lk_footer .footer-bottom ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+#lk_footer .footer-bottom ul li {
+    margin-left: 8px;
+    padding-left: 8px;
+}
+
+#lk_footer .footer-bottom ul li + li {
+    border-left: 1px solid #e8e8e8;
+}
+
+#lk_footer .footer-bottom ul li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#lk_footer .footer-bottom ul li:last-child {
+    border-left: none;
+    margin-left: 30px;
+}
+
+#lk_footer .footer-bottom ul li a {
+    color: #a6a6a6;
+}
+/**************尾部区域*****************/
+
+.btn-p1{
+    width: 250px;
+    display: flex;
+    height: 40px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background-color: red;
+    color: #fff;
+    margin-bottom:10px;
+    outline: none;
+ }
+
+.btn-p1:hover, .btn-p1:focus{
+    color: #fff;
+    outline: none;
+}
+

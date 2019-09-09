@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.itlike.domian.Article" table="article" >
+        <!--建立类属性哪一个是主键  还要跟数据库当中主键进行对象-->
+        <id name="article_id" column="article_id" >
+        <generator class="native"/>
+    </id>
+
+        <!--建立类中的普通属性与数据库当中字段进行关联-->
+        <property name="article_title" column="article_title" />
+        <property name="article_content" column="article_content"/>
+        <property name="article_time" column="article_time"/>
+        <property name="article_pic" column="article_pic"/>
+        <property name="article_desc" column="article_desc"/>
+        <many-to-one name="category" class="com.itlike.domian.Category" column="article_cid"/>
+
+    </class>
+</hibernate-mapping>
+
